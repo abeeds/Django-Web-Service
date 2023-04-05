@@ -6,13 +6,13 @@ posts = [
         'author': 'anAuthor',
         'title': 'First Blog!',
         'content': 'First!',
-        'date_posted': '4/4/23'
+        'date_posted': '3/22/23'
     },
     {
         'author': 'newGuy',
-        'title': '2ND Blog!',
+        'title': '2nd Blog!',
         'content': '2ND!',
-        'date_posted': '4/5/23'
+        'date_posted': '3/23/23'
     }
 ]
 
@@ -25,7 +25,7 @@ def home(request):
 
 def about(request):
     context = {
-        'title': About
+        'title': "about"
     }
     return render(request, 'blog/about.html', context)
 # Create your views here.
